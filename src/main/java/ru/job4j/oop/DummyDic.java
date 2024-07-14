@@ -8,7 +8,7 @@ public class DummyDic {
 
     public static void main(String[] args) {
         DummyDic translator = new DummyDic();
-        String eng = "Heart";
+        String eng = "Brain";
         System.out.println(translator.engToRus(eng));
     }
 }
