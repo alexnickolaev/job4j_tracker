@@ -2,25 +2,22 @@ package ru.job4j.checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
-    public String surname;
-    public static String newValue = "";
+    private String surname;
+    private String name;
+    private static String newValue = "";
 
-    void echo() {
+    public Broken() {
     }
 
-    void media(Object obj) {
+    public void echo() {
+    }
+
+    public void media(Object obj) {
         if (obj != null) {
             System.out.println(obj);
         }
     }
 
-    void method(int a, int b, int c) {
-
+    public void method(int a, int b, int c) {
     }
-
-    String name;
-
-    Broken() {
-    }
-
 }
