@@ -20,8 +20,8 @@ public class Calculator {
         return c / x;
     }
 
-    public int sumAllOperations(int sum, int minus, int multiply, int divide) {
-        return sum + minus + multiply + divide;
+    public int sumAllOperations(int d) {
+        return sum(d) + minus(d) + multiply(d) + divide(d);
     }
 
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class Calculator {
         System.out.println(resultMultiply);
         int resultDivide = calculator.divide(10);
         System.out.println(resultDivide);
-        int sumAllOperations = calculator.sumAllOperations(result, resultMinus, resultMultiply, resultDivide);
+        int sumAllOperations = calculator.sumAllOperations(10);
         System.out.println(sumAllOperations);
     }
 }
