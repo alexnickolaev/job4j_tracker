@@ -10,13 +10,18 @@ public class Matches {
         int count = 11;
         while (count > 0) {
             String player = turn ? "Первый игрок" : "Второй игрок";
-            System.out.println(player + " введите число от 1 до 3:");
+            System.out.println(player + ", введите число от 1 до 3:");
             int matches = Integer.parseInt(input.nextLine());
             if (matches >= 1 && matches <= 3) {
-                count -= matches;
+                if (matches <= count) {
+                    count -= matches;
+                    System.out.println("На столе осталось " + count + " спичек");
+                } else {
+                    System.out.println("Ошибка! Вы не можете взять больше спичек, чем осталось на столе.");
+
+                }
             } else {
                 System.out.println("Ошибка! Проверьте, что введенное число находится в диапазоне от 1 до 3");
-                continue;
             }
             turn = !turn;
         }
