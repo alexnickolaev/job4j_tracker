@@ -16,6 +16,7 @@ public class Matches {
                 if (matches <= count) {
                     count -= matches;
                     System.out.println("На столе осталось " + count + " спичек");
+                    turn = !turn;
                 } else {
                     System.out.println("Ошибка! Вы не можете взять больше спичек, чем осталось на столе.");
 
@@ -23,7 +24,6 @@ public class Matches {
             } else {
                 System.out.println("Ошибка! Проверьте, что введенное число находится в диапазоне от 1 до 3");
             }
-            turn = !turn;
         }
         if (!turn) {
             System.out.println("Выиграл первый игрок");
